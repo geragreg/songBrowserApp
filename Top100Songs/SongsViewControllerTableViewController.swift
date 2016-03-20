@@ -88,7 +88,7 @@ class SongsViewControllerTableViewController: UITableViewController {
     
     // JSON downloader and parser function
     func jsonParser(url:String){
-        
+        self.songObjectDict = [Song]()
         let urlPath = url
         let endpoint = NSURL(string: urlPath)
         let request = NSMutableURLRequest(URL:endpoint!)
